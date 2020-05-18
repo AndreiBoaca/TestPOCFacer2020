@@ -29,9 +29,12 @@ public class firstTest {
 				driver.findElementByXPath("//*[@id=\"editor\"]/div[2]/div[2]/div[1]/div[1]/div/div[2]/div/div/div/a[1]").click();
 				
 				//test if element is present
+				//added extra comment
 				boolean present = !driver.findElementsByXPath("//*[@id=\"editor\"]/div[3]/div/div[1]/div/div[1]/div[2]/div").isEmpty();
 				driver.close();
 				Assert.assertEquals(present, true);
+				
+				
 		}
 }
 
